@@ -20,9 +20,7 @@ wss.on('connection', (ws) => {
 });
 
 server.get('/newMS', (req, res) => {
-  wss.clients.forEach((client) => {
-    client.send('new Message');
-  });
+
 })
 /*setInterval(() => {
   wss.clients.forEach((client) => {
